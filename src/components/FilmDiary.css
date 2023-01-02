@@ -1,0 +1,49 @@
+img {
+    object-fit: contain;
+    height: 150px;
+    filter: grayscale();
+}
+
+.film-diary-title {
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    text-decoration: underline;
+    color: #233105;
+}
+
+.film-diary {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px; 
+}
+
+.film-entry-container {
+    display: flex;
+    flex-direction: row;
+    grid-column: span 4;
+}
+
+.film-detail-container {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.film-title {
+    font-family: Futura, 'Trebuchet MS', 'Arial', sans-serif;
+    letter-spacing: 0.1em;
+    color: #B98404;
+    text-align: start;
+    margin: 0;
+    font-size: 24px;
+}
+
+.watch-date {
+    margin: 8px 0 0;
+    color: #4A5B26;
+    font-family: 'Passions Conflict', cursive;
+    font-size: 30px;
+    text-align: start;
+}
