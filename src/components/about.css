@@ -1,0 +1,52 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.about-header {
+  font-family: Passions Conflict, cursive;
+  font-weight: 400;
+  font-size: 80px;
+  text-decoration: underline;
+  color: #B98404;
+  margin: 0;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin-top: 48px;;
+}
+
+.about-img {
+  width: 325px;
+  height: 325px;
+  object-fit: cover;
+  filter: unset;
+  border-radius: 7px;
+}
+
+.about-content {
+  text-align: start;
+  color: #4A5B26;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0.1ch;
+  line-height: 35px;
+  margin: 0 0 0 92px;
+}
+
+strong,
+.about-link {
+  color: #F27EB1;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
