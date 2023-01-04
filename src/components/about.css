@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 64px;
+  margin-top:64px;
 }
 
 .about-header {
@@ -19,7 +19,7 @@
   flex-direction: row;
   align-items: center;
   width: 60%;
-  margin-top: 48px;;
+  margin-top: 48px;
 }
 
 .about-img {
@@ -49,4 +49,29 @@ strong,
 
 .about-link:hover {
   text-decoration: underline;
+}
+ 
+/* BREAKPOINTS */
+/* tablet */
+@media only screen and (max-width: 1200px) {
+  .about-img {
+    width: 100%;
+  }
+
+  .about-content {
+    width: 100%;
+    margin: 32px 0 0;
+  }
+
+  .about-content-container {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .about-content-container {
+    width: 80%;
+  }
 }

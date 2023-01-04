@@ -23,3 +23,13 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+/* BREAKPOINTS */
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .nav-link-container {
+    width: 100%;
+    flex-direction: column;
+
+  }
+}
