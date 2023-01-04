@@ -1,0 +1,43 @@
+.footer-container {
+  margin: 64px 0 0;
+  padding: 48px 0;
+  background-color: #233105;
+}
+
+.callout {
+  color: #F27EB1;
+  margin: 0 0 24px;
+  font-size: 24px;
+  letter-spacing: 0.1ch;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon {
+  color: #FBF8EF;
+}
+
+.icon:hover {
+  color: #F27EB1;
+}
+
+.icon:not(:first-child) {
+  margin-left: 32px;
+}
+
+.credit-subheading {
+  margin: 24px 0 0;
+  font-family: Passions Conflict, cursive;
+  color: #FBF8EF;
+  font-size: 24px;
+}
+
+.movie-title {
+  font-family: 'Futura', 'Trebuchet MS', 'Arial', sans-serif;
+  font-size: 14px;
+  color: #F27EB1;
+}
