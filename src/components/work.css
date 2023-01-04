@@ -1,5 +1,5 @@
 .work-section {
-  margin-top: 128px;
+  padding-top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +78,10 @@
 /* BREAKPOINTS */
 /* tablet */
 @media only screen and (max-width: 1200px) {
+  .work-entry-container {
+    width: 80%;
+  }
+
   /* style cards as one 2 card row, and one orphan */
   .work-entry-wrapper {
     grid-column: span 6;
@@ -92,7 +96,7 @@
 @media only screen and (max-width: 600px) {
   .work-entry-container {
     grid-template-columns: repeat(4, 1fr);
-    width: 80%;
+    margin-top: 32px;
   }
 
   .work-entry-wrapper {
