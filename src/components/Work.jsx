@@ -42,7 +42,7 @@ const WorkEntry = ({ company, position, term, imageSeq, skillList }) => {
 const WorkSummary = () => {
   return (
     <section id="work" className="work-section">
-      <h3 className="work-header">experience</h3>
+      <h3 className="work-header">work</h3>
       <div className="work-entry-container">
         {experienceList.map((entry, index) => (
           <WorkEntry 

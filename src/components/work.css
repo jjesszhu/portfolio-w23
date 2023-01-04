@@ -8,7 +8,7 @@
 .work-header {
   font-family: Passions Conflict, cursive;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 70px;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #B98404;
@@ -62,7 +62,7 @@
   width: fit-content;
   padding: 2px 6px;
   border-radius: 20px; 
-  margin-top: 5px; 
+  margin-top: 7px; 
 }
 
 .skill-tag-text {
@@ -72,7 +72,7 @@
 }
 
 .skill-tag:not(:last-child) {
-  margin-right: 5px
+  margin-right: 7px;
 }
 
 /* BREAKPOINTS */
@@ -95,11 +95,11 @@
 /* mobile */
 @media only screen and (max-width: 600px) {
   .work-entry-container {
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
   }
 
   .work-entry-wrapper {
-    grid-column: span 12;
+    
   }
 }

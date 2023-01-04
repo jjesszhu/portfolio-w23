@@ -8,7 +8,7 @@
 .about-header {
   font-family: Passions Conflict, cursive;
   font-weight: 400;
-  font-size: 80px;
+  font-size: 70px;
   text-decoration: underline;
   color: #B98404;
   margin: 0;
@@ -65,6 +65,7 @@ strong,
   .about-content {
     width: 100%;
     margin: 32px 0 0;
+    font-size: 18px;
   }
 
   .about-content-container {
