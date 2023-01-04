@@ -29,8 +29,9 @@ const Footer = () => {
     <footer className="footer-container">
       <h2 className="callout">CONNECT WITH ME!</h2>
       <div className="icon-container">
-        {faIcons.map((icon) => (
+        {faIcons.map((icon, index) => (
           <FooterLink
+            key={index}
             faIcon={icon.icon}
             url={icon.url}
           />

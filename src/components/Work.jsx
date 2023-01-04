@@ -28,8 +28,9 @@ const WorkEntry = ({ company, position, term, imageSeq, skillList }) => {
         <p className="term">{term}</p>
       </div>
       <div className="skill-list-container">
-        {skillList.map((skill) => (
+        {skillList.map((skill, index) => (
           <SkillTag
+            key={index}
             skill={skill}
           />
         ))}
@@ -43,8 +44,9 @@ const WorkSummary = () => {
     <section id="work" className="work-section">
       <h3 className="work-header">experience</h3>
       <div className="work-entry-container">
-        {experienceList.map((entry) => (
+        {experienceList.map((entry, index) => (
           <WorkEntry 
+            key={index}
             company={entry.company}
             position={entry.position}
             term={entry.term}
