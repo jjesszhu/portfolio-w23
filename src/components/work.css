@@ -1,5 +1,5 @@
 .work-section {
-  margin-top: 64px;
+  margin-top: 128px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,8 +27,75 @@
   background-color: white;
   grid-column: span 4;
   box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 7px;
+  text-align: start;
+  padding: 16px;
 }
 
 .work-pic {
   width: 100%;
+}
+
+.company {
+  font-size: 24px;
+  font-weight: bold;
+  color: #233105;
+  margin: 16px 0 0;
+}
+
+.term,
+.position {
+  font-size: 18px;
+  color: #4A5B26;
+  margin: 8px 0 0;
+}
+
+.skill-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.skill-tag {
+  background-color: #596D2E;
+  width: fit-content;
+  padding: 2px 6px;
+  border-radius: 20px; 
+  margin-top: 5px; 
+}
+
+.skill-tag-text {
+  margin: 0;
+  font-size: 14px;
+  color: #FBF8EF;
+}
+
+.skill-tag:not(:last-child) {
+  margin-right: 5px
+}
+
+/* BREAKPOINTS */
+/* tablet */
+@media only screen and (max-width: 1200px) {
+  /* style cards as one 2 card row, and one orphan */
+  .work-entry-wrapper {
+    grid-column: span 6;
+  }
+
+  .work-entry-wrapper:last-child {
+    grid-column-end: 10;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  .work-entry-container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+  }
+
+  .work-entry-wrapper {
+    grid-column: span 12;
+  }
 }

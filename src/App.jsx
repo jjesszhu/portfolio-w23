@@ -20,19 +20,17 @@ const App = () => {
 
   return (
     <div className="App">
-        <NavBar />
-        <Splash />
-        <About />
-        {!filmList.length === 0 && (
-          <>
-            <FilmDiary
-              filmList={filmList}
-            />
-            <hr className="dashed-divider"/>
-          </>
-        )}
-        <WorkSummary />
-        <Footer />
+      <NavBar />
+      <Splash />
+      <About />
+      {!filmList.length === 0 && (
+        <>
+          <FilmDiary filmList={filmList} />
+          <hr className="dashed-divider" />
+        </>
+      )}
+      <WorkSummary />
+      <Footer />
     </div>
   );
 };
