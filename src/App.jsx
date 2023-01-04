@@ -1,18 +1,34 @@
+import { useEffect, useState } from "react";
 import "./App.css";
+import About from "./components/About";
 import FilmDiary from "./components/FilmDiary";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Splash from "./components/Splash";
+import WorkSummary from "./components/Work";
 import letterboxdClient from "./data/letterboxd";
-// import NavBar from './components/NavBar';
 
 const App = () => {
-  const filmList = letterboxdClient();
+  const [filmList, setFilmList] = useState([]);
+
+  useEffect(() => {
+    const response = letterboxdClient();
+    if (response) {
+      setFilmList(response);
+    }
+  }, []);
 
   return (
     <div className="App">
-      <header>
+        <NavBar />
+        <Splash />
+        <About />
         <FilmDiary
           filmList={filmList}
         />
-      </header>
+        <hr className="dashed-divider"/>
+        <WorkSummary />
+        <Footer />
     </div>
   );
 };

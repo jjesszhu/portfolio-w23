@@ -1,5 +1,10 @@
 .App {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.dashed-divider {
+  margin-top: 128px;
   width: 60%;
+  border: 6px dashed #F27EB1;
 }
