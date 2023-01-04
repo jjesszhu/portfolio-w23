@@ -1,4 +1,4 @@
-img {
+.film-poster {
     object-fit: contain;
     height: 150px;
     filter: grayscale();
@@ -9,9 +9,12 @@ img {
     font-size: 36px;
     text-decoration: underline;
     color: #233105;
+    margin: 128px 0 0 0;
 }
 
 .film-diary {
+    margin: 48px auto 0;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px; 
