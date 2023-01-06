@@ -269,7 +269,7 @@ function invalidUsername(username) {
 }
 
 function getDiaryData(username) {
-  const uri = `https://enigmatic-atoll-37999.herokuapp.com/https://letterboxd.com/${username}/rss/`;
+  const uri = `https://nameless-spire-73151.herokuapp.com/https://letterboxd.com/${username}/rss/`;
 
   return fetch(uri)
     .then((response) => {
