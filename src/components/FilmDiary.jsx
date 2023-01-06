@@ -20,15 +20,15 @@ const FilmEntry = ({ title, poster, watchDate }) => {
 
 const FilmDiary = ({ title = "film diary", filmList }) => {
   return (
-    <section>
-      <h3 className="film-diary-title">{title}</h3>
+    <section className="film-diary-section">
+      <h3 className="film-diary-header">{title}</h3>
       <div className="film-diary">
         {filmList?.map((entry, index) => {
           return (
             <FilmEntry
               key={index}
               title={entry.film.title.toUpperCase()}
-              poster={entry.film.image.large}
+              poster={entry.film.image.medium}
               watchDate={new Date(entry.date.watched).toDateString()}
             />
           );

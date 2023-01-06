@@ -6,29 +6,34 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Splash from "./components/Splash";
 import WorkSummary from "./components/Work";
-// import letterboxdClient from "./data/letterboxd";
+import letterboxd from "./data/letterboxd";
 
 const App = () => {
   const [filmList, setFilmList] = useState([]);
 
-  // useEffect(() => {
-  //   const response = letterboxdClient();
-  //   if (response) {
-  //     setFilmList(response);
-  //   }
-  // }, []);
+  const getLetterboxdFeed = () => {
+    letterboxd("jesszhu")
+      .then((items) => setFilmList(items.slice(0, 3)))
+      .catch(() => setFilmList(null));
+  };
+
+  useEffect(() => {
+    getLetterboxdFeed();
+  }, []);
 
   return (
     <div className="App">
       <NavBar />
       <Splash />
       <About />
-      {!filmList.length === 0 && (
+      { filmList ? 
         <>
           <FilmDiary filmList={filmList} />
-          <hr className="dashed-divider" />
+          <hr className="dashed-divider" /> 
         </>
-      )}
+        :
+        <p>"film diary could not be displayed"</p>
+      }
       <WorkSummary />
       <Footer />
     </div>
