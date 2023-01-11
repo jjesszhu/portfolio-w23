@@ -13,7 +13,6 @@ const NavBar = () => {
           className="burger"
           onClick={() => {
             setIsOpen(!isOpen);
-            console.log(isOpen);
           }}
         >
           <FontAwesomeIcon icon={faHamburger} size="2x" />
@@ -24,7 +23,7 @@ const NavBar = () => {
         <a href="#work" className={`nav-link ${!isOpen ? "hidden" : ""}`}>
           work
         </a>
-        <a href="#work" className={`nav-link ${!isOpen ? "hidden" : ""}`}>résumé</a>
+        <a href="https://drive.google.com/file/d/16R2XfaMUUiGgQhHKRZakSmLkGWuf7LI5/view?usp=sharing" rel="noreferrer" target="_blank" className={`nav-link ${!isOpen ? "hidden" : ""}`}>résumé</a>
       </div>
     </nav>
   );
