@@ -32,7 +32,7 @@ const App = () => {
           <hr className="dashed-divider" /> 
         </>
         :
-        <p>"film diary could not be displayed"</p>
+        <p>ERROR: film diary could not be displayed</p>
       }
       <WorkSummary />
       <Footer />
