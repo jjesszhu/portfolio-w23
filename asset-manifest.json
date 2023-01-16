@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.abec9d5b.css",
-    "main.js": "/static/js/main.334aca63.js",
+    "main.js": "/static/js/main.54246b60.js",
     "static/js/787.d8eb81df.chunk.js": "/static/js/787.d8eb81df.chunk.js",
     "static/media/about.jpeg": "/static/media/about.2ad1a8e8d90379199f03.jpeg",
     "static/media/ford.png": "/static/media/ford.7a2e2740a7429a00cc43.png",
@@ -9,11 +9,11 @@
     "static/media/stattrak.png": "/static/media/stattrak.0e65cdc811dd1481075f.png",
     "index.html": "/index.html",
     "main.abec9d5b.css.map": "/static/css/main.abec9d5b.css.map",
-    "main.334aca63.js.map": "/static/js/main.334aca63.js.map",
+    "main.54246b60.js.map": "/static/js/main.54246b60.js.map",
     "787.d8eb81df.chunk.js.map": "/static/js/787.d8eb81df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abec9d5b.css",
-    "static/js/main.334aca63.js"
+    "static/js/main.54246b60.js"
   ]
 }
